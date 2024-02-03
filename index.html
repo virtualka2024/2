@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <title>Корейское кафе</title>
+  <style>
+    body {      background-image: url('f.jpg');
+      background-size: cover;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      border: 4px solid black;
+      padding: 15px;
+      text-align: center;
+      width: 45%;
+      margin-bottom: 20px;
+    }
+
+    .img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .price {
+      font-size: 18px;
+      color: green;
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      margin: 5px;
+      width: 100%;
+    }
+
+    #ingredients {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border: 2px solid black;
+      text-align: center;
+    }
+
+    #ingredients-list {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item" id="product1">
+      <img src="images/1.png" alt="Product 1" class="img">
+      <p class="price">1900 тг</p>
+      <button class="btn" onclick="addToCart(1)">Купить</button>
+      <button class="btn" onclick="showIngredients(1)">Состав</button>
+    </div>
+
+    <div class="item" id="product2">
+      <img src="images/2.png" alt="Product 2" class="img">
+      <p class="price">2100 тг</p>
+      <button class="btn" onclick="addToCart(2)">Купить</button>
+      <button class="btn" onclick="showIngredients(2)">Состав</button>
+    </div>
+
+    <div class="item" id="product3">
+      <img src="images/3.png" alt="Product 3" class="img">
+      <p class="price">2000 тг</p>
+      <button class="btn" onclick="addToCart(3)">Купить</button>
+      <button class="btn" onclick="showIngredients(3)">Состав</button>
+    </div>
+
+    <div class="item" id="product4">
+      <img src="images/4.png" alt="Product 4" class="img">
+      <p class="price">1250 тг</p>
+      <button class="btn" onclick="addToCart(4)">Купить</button>
+      <button class="btn" onclick="showIngredients(4)">Состав</button>
+    </div>
+
+    <div class="item" id="product5">
+      <img src="images/5.png" alt="Product 5" class="img">
+      <p class="price">1250 тг</p>
+      <button class="btn" onclick="addToCart(5)">Купить</button>
+      <button class="btn" onclick="showIngredients(5)">Состав</button>
+    </div>
+
+    <div class="item" id="product6">
+      <img src="images/6.png" alt="Product 6" class="img">
+      <p class="price">1250 тг</p>
+      <button class="btn" onclick="addToCart(6)">Купить</button>
+      <button class="btn" onclick="showIngredients(6)">Состав</button>
+    </div>
+  </div>
+
+  <div id="ingredients" class="ingredients-container">
+    <ul id="ingredients-list" class="ingredients-list"></ul>
+    <button onclick="closeIngredients()">Закрыть</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
