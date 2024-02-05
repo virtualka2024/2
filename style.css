@@ -67,14 +67,3 @@ body {
 #ingredients {
   /* Ваши текущие стили для модального окна */
 }
-
-#ingredients-list {
-  list-style-type: none;
-  padding: 0;
-  text-align: left; /* Центрирование текста по левому краю */
-}
-
-#ingredients-list li {
-  font-size: 16px; /* Увеличиваем шрифт для читаемости */
-  margin-bottom: 10px; /* Добавляем отступ между ингредиентами */
-}
